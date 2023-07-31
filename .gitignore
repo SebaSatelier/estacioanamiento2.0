@@ -1,0 +1,25 @@
+# NetBeans specific
+/nbproject/private/
+/nbproject/inf/
+/nbproject/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Maven specific
+/target/
+/maven-eclipse.xml
+/.mvn/
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+.idea/
+*.class
+*.log
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
