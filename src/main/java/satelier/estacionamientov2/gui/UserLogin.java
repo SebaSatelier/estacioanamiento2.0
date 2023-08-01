@@ -1,11 +1,16 @@
 package satelier.estacionamientov2.gui;
 
+import satelier.estacionamientov2.logic.controllers.UserController;
+import satelier.estacionamientov2.logic.models.User;
+
 
 public class UserLogin extends javax.swing.JFrame {
 
-   
+    UserController controller;
+    
     public UserLogin() {
         initComponents();
+        controller = new UserController();
     }
 
     
@@ -124,7 +129,10 @@ public class UserLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
-        // TODO add your handling code here:
+        String userName = txtUsername.getText();
+        String password = txtPassword.getText();
+        
+        User user = controller.validateUser(userName, password);
     }//GEN-LAST:event_btnSignInActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
